@@ -11,6 +11,11 @@ function buscarCep() {
         console.log("A cidade é " + json.city);
         console.log("O bairro é " + json.neighborhood);
         console.log("A rua é " + json.street);
+
+        document.getElementById("campo_rua").value = json.street;
+        document.getElementById("campo_bairro").value = json.neighborhood;
+        document.getElementById("campo_cidade").value = json.city;
+        document.getElementById("campo_estado").value = json.state;
       });
   }
   
