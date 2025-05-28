@@ -19,6 +19,15 @@ function buscarCep() {
       });
   }
   
+  function salvarEndereco() {
+    const cep = document.getElementById("input_cep").value;
+    const rua = document.getElementById("campo_rua").value;
+    const bairro = document.getElementById("campo_bairro").value;
+    const cidade = document.getElementById("campo_cidade").value;
+    const estado = document.getElementById("campo_estado").value;
+  
+    const mensagem = document.getElementById("mensagem"); }
+
   function configurarEventos() {
     const inputCep = document.getElementById("input_cep");
     inputCep.addEventListener("focusout", buscarCep);
