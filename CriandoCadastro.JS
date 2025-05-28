@@ -12,10 +12,10 @@ function buscarCep() {
         console.log("O bairro é " + json.neighborhood);
         console.log("A rua é " + json.street);
 
-        document.getElementById("campo_rua").value = json.street;
-        document.getElementById("campo_bairro").value = json.neighborhood;
-        document.getElementById("campo_cidade").value = json.city;
-        document.getElementById("campo_estado").value = json.state;
+        document.getElementById("input_street").value = json.street;
+        document.getElementById("input_neighborhood").value = json.neighborhood;
+        document.getElementById("input_city").value = json.city;
+        document.getElementById("input_state").value = json.state;
       });
   }
   
